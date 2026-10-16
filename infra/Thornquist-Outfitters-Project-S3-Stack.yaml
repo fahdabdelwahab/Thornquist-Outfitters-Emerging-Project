@@ -1,0 +1,124 @@
+---
+Metadata:
+  AWSToolsMetrics:
+    IaC_Generator: "arn:aws:cloudformation:us-east-1:660357234481:generatedTemplate/9b8bb2ff-0ce9-4e94-a7ee-21447322ebb7"
+Resources:
+  S3BucketThornquistlandingsf2654:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      AbacStatus: "Disabled"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "thornquist-landing-sf2654"
+      VersioningConfiguration:
+        Status: "Enabled"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          BlockedEncryptionTypes:
+            EncryptionType:
+            - "SSE-C"
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  S3BucketThornquistathenaresultssf2654:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      AbacStatus: "Disabled"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "thornquist-athena-results-sf2654"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          BlockedEncryptionTypes:
+            EncryptionType:
+            - "SSE-C"
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  S3BucketThornquistcuratedsf2654:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      AbacStatus: "Disabled"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "thornquist-curated-sf2654"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          BlockedEncryptionTypes:
+            EncryptionType:
+            - "SSE-C"
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  S3BucketThornquisttrustedsf2654:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      AbacStatus: "Disabled"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "thornquist-trusted-sf2654"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          BlockedEncryptionTypes:
+            EncryptionType:
+            - "SSE-C"
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  S3BucketThornquistrawsf2654:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      AbacStatus: "Disabled"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "thornquist-raw-sf2654"
+      VersioningConfiguration:
+        Status: "Enabled"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          BlockedEncryptionTypes:
+            EncryptionType:
+            - "SSE-C"
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
